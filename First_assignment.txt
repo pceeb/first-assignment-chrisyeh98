@@ -8,20 +8,21 @@ The book is downloadable here: https://allesinalab.uchicago.edu/wp-content/uploa
 
 II. Answer the following question. What does this do?   
 
-1. ls [A-Z]*
-2. cp *.sh /tmp
-3. man pwd
-4. cd ~
-5. mkdir -p /test1/test2/test3 
-6. cp -r /tmp .
-7. ls | less
-8. head -n 24 test.txt » abc.txt
-9. echo "aaa" > aaa.txt
-10. ps -u sallesina
-11. top
-12. ls | grep .sh | xargs mv /tmp
-13. du -sk /home/* | sort -r -n | head -10
-14. sort -r names.txt
+1. ls [A-Z]*:List files in directory with identifiers [A-Z]
+ls-a=List All files, including hidden, ls -h= list all files with human readable size(MB,GB), ls -l= list all files, long format, ls -S= list all files, order by size, ls -t= list all files, order by modification time, ls -1, list all files, one file per time.
+2. cp *.sh /tmp:  .sh file type into tmp directory 
+3. man pwd: shows help manual for command pwd 
+4. cd ~:Goes to Home Directory
+5. mkdir -p /test1/test2/test3: create directories test 1, test 2, test 3 if they do not already exist 
+6. cp -r /tmp: cp file recursively into tmp directory 
+7. ls | less: progressively prints a file of a list of all files in the current directory you are in
+8. head -n 24 test.txt » abc.txt: Redirect first 10 lines of text file text.txt into another text file abc.txt
+9. echo "aaa" > aaa.txt: redirect "aaa" string into text file aaa.txt
+10. ps -u sallesina: print processes in use by user sallesina
+11. top: shows top processes running
+12. ls | grep .sh | xargs mv /tmp: list all files in directory then reads list of strings determined by grep and moves it into temp directory   
+13. du -sk /home/* | sort -r -n | head -10: print files in home directory and subdirectories numerically and size
+14. sort -r names.txt: sort all lines in names.txt recursively 
 
 **IMPORTANT** 
 To submit your answers you must do the following:
